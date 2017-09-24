@@ -1,0 +1,177 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "servers_devaemodwhdsql_name": {
+            "defaultValue": "devaemodwhdsql",
+            "type": "String"
+        },
+        "storageAccounts_devaemodlin_name": {
+            "defaultValue": "devaemodlin",
+            "type": "String"
+        },
+        "storageAccounts_devaemodwhdstor_name": {
+            "defaultValue": "devaemodwhdstor",
+            "type": "String"
+        },
+        "databases_master_name_1": {
+            "defaultValue": "master",
+            "type": "String"
+        },
+        "databases_devaemodwhdhivedb_name": {
+            "defaultValue": "devaemodwhdhivedb",
+            "type": "String"
+        },
+        "databases_devaemodwhdooziedb_name": {
+            "defaultValue": "devaemodwhdooziedb",
+            "type": "String"
+        },
+        "firewallRules_AllowAllWindowsAzureIps_name": {
+            "defaultValue": "AllowAllWindowsAzureIps",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "comments": "Generalized from resource: '/subscriptions/9704dbd9-f2ff-47d6-b9e5-8d539ef4b8da/resourceGroups/DevETL/providers/Microsoft.Sql/servers/devaemodwhdsql'.",
+            "type": "Microsoft.Sql/servers",
+            "kind": "v12.0",
+            "name": "[parameters('servers_devaemodwhdsql_name')]",
+            "apiVersion": "2014-04-01-preview",
+            "location": "Australia Southeast",
+            "scale": null,
+            "properties": {
+                "administratorLogin": "devsqladmin",
+                "administratorLoginPassword": null,
+                "version": "12.0"
+            },
+            "dependsOn": []
+        },
+      {
+            "comments": "Generalized from resource: '/subscriptions/9704dbd9-f2ff-47d6-b9e5-8d539ef4b8da/resourceGroups/devetl/providers/Microsoft.Storage/storageAccounts/devaemodwhdstor'.",
+            "type": "Microsoft.Storage/storageAccounts",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "kind": "Storage",
+            "name": "[parameters('storageAccounts_devaemodwhdstor_name')]",
+            "apiVersion": "2016-01-01",
+            "location": "australiaeast",
+            "tags": {},
+            "scale": null,
+            "properties": {},
+            "dependsOn": []
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/9704dbd9-f2ff-47d6-b9e5-8d539ef4b8da/resourceGroups/DevETL/providers/Microsoft.Sql/servers/devaemodwhdsql/databases/devaemodwhdhivedb'.",
+            "type": "Microsoft.Sql/servers/databases",
+            "kind": "v12.0,user",
+            "name": "[concat(parameters('servers_devaemodwhdsql_name'), '/', parameters('databases_devaemodwhdhivedb_name'))]",
+            "apiVersion": "2014-04-01-preview",
+            "location": "Australia Southeast",
+            "scale": null,
+            "properties": {
+                "databaseId": "8a565f33-a0be-4666-823d-75da9746f73a",
+                "edition": "Standard",
+                "status": "Online",
+                "serviceLevelObjective": "S2",
+                "collation": "SQL_Latin1_General_CP1_CI_AS",
+                "maxSizeBytes": "268435456000",
+                "creationDate": "2017-09-24T02:13:26.61Z",
+                "currentServiceObjectiveId": "455330e1-00cd-488b-b5fa-177c226f28b7",
+                "requestedServiceObjectiveId": "455330e1-00cd-488b-b5fa-177c226f28b7",
+                "requestedServiceObjectiveName": "S2",
+                "sampleName": null,
+                "defaultSecondaryLocation": "Australia East",
+                "earliestRestoreDate": "2017-09-24T02:23:51.19Z",
+                "elasticPoolName": null,
+                "containmentState": 2,
+                "readScale": "Disabled",
+                "failoverGroupId": null
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Sql/servers', parameters('servers_devaemodwhdsql_name'))]"
+            ]
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/9704dbd9-f2ff-47d6-b9e5-8d539ef4b8da/resourceGroups/DevETL/providers/Microsoft.Sql/servers/devaemodwhdsql/databases/devaemodwhdooziedb'.",
+            "type": "Microsoft.Sql/servers/databases",
+            "kind": "v12.0,user",
+            "name": "[concat(parameters('servers_devaemodwhdsql_name'), '/', parameters('databases_devaemodwhdooziedb_name'))]",
+            "apiVersion": "2014-04-01-preview",
+            "location": "Australia Southeast",
+            "scale": null,
+            "properties": {
+                "databaseId": "c36a89a3-fce0-422c-bd97-3455ea6d7123",
+                "edition": "Standard",
+                "status": "Online",
+                "serviceLevelObjective": "S2",
+                "collation": "SQL_Latin1_General_CP1_CI_AS",
+                "maxSizeBytes": "268435456000",
+                "creationDate": "2017-09-24T02:15:25.933Z",
+                "currentServiceObjectiveId": "455330e1-00cd-488b-b5fa-177c226f28b7",
+                "requestedServiceObjectiveId": "455330e1-00cd-488b-b5fa-177c226f28b7",
+                "requestedServiceObjectiveName": "S2",
+                "sampleName": null,
+                "defaultSecondaryLocation": "Australia East",
+                "earliestRestoreDate": "2017-09-24T02:25:50.967Z",
+                "elasticPoolName": null,
+                "containmentState": 2,
+                "readScale": "Disabled",
+                "failoverGroupId": null
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Sql/servers', parameters('servers_devaemodwhdsql_name'))]"
+            ]
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/9704dbd9-f2ff-47d6-b9e5-8d539ef4b8da/resourceGroups/DevETL/providers/Microsoft.Sql/servers/devaemodwhdsql/databases/master'.",
+            "type": "Microsoft.Sql/servers/databases",
+            "kind": "v12.0,system",
+            "name": "[concat(parameters('servers_devaemodwhdsql_name'), '/', parameters('databases_master_name_1'))]",
+            "apiVersion": "2014-04-01-preview",
+            "location": "Australia Southeast",
+            "scale": null,
+            "properties": {
+                "databaseId": "62585a84-249d-46ae-b5a4-128d261e1465",
+                "edition": "System",
+                "status": "Online",
+                "serviceLevelObjective": "System2",
+                "collation": "SQL_Latin1_General_CP1_CI_AS",
+                "maxSizeBytes": "32212254720",
+                "creationDate": "2017-09-24T02:09:43.003Z",
+                "currentServiceObjectiveId": "620323bf-2879-4807-b30d-c2e6d7b3b3aa",
+                "requestedServiceObjectiveId": "620323bf-2879-4807-b30d-c2e6d7b3b3aa",
+                "requestedServiceObjectiveName": "System2",
+                "sampleName": null,
+                "defaultSecondaryLocation": "Australia East",
+                "earliestRestoreDate": null,
+                "elasticPoolName": null,
+                "containmentState": 2,
+                "readScale": "Disabled",
+                "failoverGroupId": null
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Sql/servers', parameters('servers_devaemodwhdsql_name'))]"
+            ]
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/9704dbd9-f2ff-47d6-b9e5-8d539ef4b8da/resourceGroups/DevETL/providers/Microsoft.Sql/servers/devaemodwhdsql/firewallRules/AllowAllWindowsAzureIps'.",
+            "type": "Microsoft.Sql/servers/firewallRules",
+            "kind": "v12.0",
+            "name": "[concat(parameters('servers_devaemodwhdsql_name'), '/', parameters('firewallRules_AllowAllWindowsAzureIps_name'))]",
+            "apiVersion": "2014-04-01-preview",
+            "location": "Australia Southeast",
+            "scale": null,
+            "properties": {
+                "startIpAddress": "0.0.0.0",
+                "endIpAddress": "0.0.0.0"
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Sql/servers', parameters('servers_devaemodwhdsql_name'))]"
+            ]
+        }
+    ]
+}
