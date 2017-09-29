@@ -1,0 +1,378 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "servers_insightexpdb_name": {
+            "value": null
+        },
+        "servers_insighthdsql_name": {
+            "value": null
+        },
+        "alertrules_AEMOInsightDF_name": {
+            "value": null
+        },
+        "alertrules_DTU_Percentage_name": {
+            "value": null
+        },
+        "virtualNetworks_insightvnet_name": {
+            "value": null
+        },
+        "storageAccounts_insightstor_name": {
+            "value": null
+        },
+        "alertrules_Email_RunStarted_name": {
+            "value": null
+        },
+        "alertrules_BOM_DW_to_Insight_name": {
+            "value": null
+        },
+        "storageAccounts_insightdiag967_name": {
+            "value": null
+        },
+        "databases_master_name": {
+            "value": null
+        },
+        "databases_master_name_1": {
+            "value": null
+        },
+        "alertrules_Email_RunFinished_Fail_name": {
+            "value": null
+        },
+        "alertrules_Email_RunFinishedSuccess_name": {
+            "value": null
+        },
+        "databases_insightdb_name": {
+            "value": null
+        },
+        "firewallRules_LaceAemo_name": {
+            "value": null
+        },
+        "firewallRules_LaceHome_name": {
+            "value": null
+        },
+        "firewallRules_LaceAemo_name_1": {
+            "value": null
+        },
+        "firewallRules_LaceHome_name_1": {
+            "value": null
+        },
+        "databases_insighthivedb_name": {
+            "value": null
+        },
+        "firewallRules_AEMO_Perth_name": {
+            "value": null
+        },
+        "databases_insightooziedb_name": {
+            "value": null
+        },
+        "firewallRules_AEMO_Sydney_name": {
+            "value": null
+        },
+        "firewallRules_Joga_work_pc_name": {
+            "value": null
+        },
+        "firewallRules_AEMO_Brisbane_name": {
+            "value": null
+        },
+        "firewallRules_AEMO_Melbourne_name": {
+            "value": null
+        },
+        "subnets_clustersubnet_name": {
+            "value": null
+        },
+        "loadBalancers_gateway_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "firewallRules_AllowAllWindowsAzureIps_name": {
+            "value": null
+        },
+        "firewallRules_AllowAllWindowsAzureIps_name_1": {
+            "value": null
+        },
+        "loadBalancers_edgenode_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "loadBalancers_headnode_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_gateway_1_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_gateway_3_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "firewallRules_ClientIPAddress_2017_4_6_11_36_18_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_edgenode_1_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_headnode_0_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_headnode_1_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "publicIPAddresses_publicIpgateway_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_0_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "publicIPAddresses_publicIpedgenode_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "publicIPAddresses_publicIpheadnode_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1175_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1176_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1177_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1178_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1179_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1180_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1181_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1182_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1183_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1184_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1185_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1186_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1187_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1190_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1191_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1219_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1220_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1221_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1236_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1237_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1247_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1248_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1249_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1250_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1251_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1253_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1282_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1283_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1285_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1287_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1288_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1290_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1291_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1293_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1294_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1295_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1296_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_zookeepernode_0_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_zookeepernode_1_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "networkInterfaces_nic_zookeepernode_2_22ea513dd78849a9b86318a422e09fdf_name": {
+            "value": null
+        },
+        "securityRules_JupyterHub_name": {
+            "value": null
+        },
+        "securityRules_AmbariAgent_name": {
+            "value": null
+        },
+        "securityRules_RStudioServer_name": {
+            "value": null
+        },
+        "securityRules_default_allow_ssh_name": {
+            "value": null
+        },
+        "alertrules_AEMOInsightDF_resourceUri": {
+            "value": null
+        },
+        "alertrules_BOM_DW_to_Insight_resourceUri": {
+            "value": null
+        },
+        "alertrules_Email_RunFinished_Fail_resourceUri": {
+            "value": null
+        },
+        "alertrules_Email_RunFinishedSuccess_resourceUri": {
+            "value": null
+        },
+        "alertrules_Email_RunStarted_resourceUri": {
+            "value": null
+        },
+        "loadBalancers_edgenode_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "loadBalancers_gateway_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "loadBalancers_gateway_22ea513dd78849a9b86318a422e09fdf_id_1": {
+            "value": null
+        },
+        "loadBalancers_gateway_22ea513dd78849a9b86318a422e09fdf_id_2": {
+            "value": null
+        },
+        "loadBalancers_headnode_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "loadBalancers_headnode_22ea513dd78849a9b86318a422e09fdf_id_1": {
+            "value": null
+        },
+        "networkInterfaces_nic_edgenode_1_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_gateway_1_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_gateway_3_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_headnode_0_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_headnode_1_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_0_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1236_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1237_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1247_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1248_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1249_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1250_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1251_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1253_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1282_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1283_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1285_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1287_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1288_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1290_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1291_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1293_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1294_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1295_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_workernode_1296_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_zookeepernode_0_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_zookeepernode_1_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        },
+        "networkInterfaces_nic_zookeepernode_2_22ea513dd78849a9b86318a422e09fdf_id": {
+            "value": null
+        }
+    }
+}
